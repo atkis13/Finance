@@ -16,5 +16,25 @@ namespace Finance
         {
             InitializeComponent();
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+            tab_main.SelectedTab = tab_dash;
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            tab_main.SelectedTab = tab_new;
+        }
+
+        private void btn_details_Click(object sender, EventArgs e)
+        {
+            tab_main.SelectedTab = tab_details;
+        }
     }
 }
