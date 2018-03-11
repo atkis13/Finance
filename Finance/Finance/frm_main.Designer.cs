@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tab_main = new System.Windows.Forms.TabControl();
             this.tab_dash = new System.Windows.Forms.TabPage();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lbl_sum_main = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -69,51 +70,50 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label0 = new System.Windows.Forms.Label();
             this.tab_details = new System.Windows.Forms.TabPage();
+            this.lbl_sum_expense = new System.Windows.Forms.Label();
+            this.lbl_sum_income = new System.Windows.Forms.Label();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.txt_sum2 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.grid_expense = new System.Windows.Forms.DataGridView();
+            this.grid_income = new System.Windows.Forms.DataGridView();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.btn_go = new System.Windows.Forms.Button();
+            this.cmb_year = new System.Windows.Forms.ComboBox();
+            this.cmb_month = new System.Windows.Forms.ComboBox();
+            this.cmb_account = new System.Windows.Forms.ComboBox();
+            this.tab_new = new System.Windows.Forms.TabPage();
+            this.label47 = new System.Windows.Forms.Label();
+            this.btn_add_addData = new System.Windows.Forms.Button();
+            this.rt_log = new System.Windows.Forms.RichTextBox();
+            this.cmb_add_type = new System.Windows.Forms.ComboBox();
+            this.cmb_add_account = new System.Windows.Forms.ComboBox();
+            this.dt_add_date = new System.Windows.Forms.DateTimePicker();
+            this.txt_add_details = new System.Windows.Forms.TextBox();
+            this.txt_add_amt = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.btn_dashboard = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_details = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.cmb_account = new System.Windows.Forms.ComboBox();
-            this.cmb_month = new System.Windows.Forms.ComboBox();
-            this.cmb_year = new System.Windows.Forms.ComboBox();
-            this.btn_go = new System.Windows.Forms.Button();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.grid_income = new System.Windows.Forms.DataGridView();
-            this.grid_expense = new System.Windows.Forms.DataGridView();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.txt_sum2 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.lbl_sum_income = new System.Windows.Forms.Label();
-            this.lbl_sum_expense = new System.Windows.Forms.Label();
-            this.tab_new = new System.Windows.Forms.TabPage();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.txt_add_amt = new System.Windows.Forms.TextBox();
-            this.txt_add_details = new System.Windows.Forms.TextBox();
-            this.dt_add_date = new System.Windows.Forms.DateTimePicker();
-            this.cmb_add_account = new System.Windows.Forms.ComboBox();
-            this.cmb_add_type = new System.Windows.Forms.ComboBox();
-            this.rt_log = new System.Windows.Forms.RichTextBox();
-            this.btn_add_addData = new System.Windows.Forms.Button();
-            this.label47 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tab_main.SuspendLayout();
             this.tab_dash.SuspendLayout();
-            this.tab_details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_income)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_expense)).BeginInit();
+            this.tab_details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_expense)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_income)).BeginInit();
             this.tab_new.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -172,6 +172,22 @@
             this.tab_dash.TabIndex = 0;
             this.tab_dash.Text = "Dashboard";
             this.tab_dash.UseVisualStyleBackColor = true;
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(586, 60);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(529, 353);
+            this.chart1.TabIndex = 32;
+            this.chart1.Text = "chart1";
             // 
             // lbl_sum_main
             // 
@@ -521,6 +537,321 @@
             this.tab_details.Text = "Details";
             this.tab_details.UseVisualStyleBackColor = true;
             // 
+            // lbl_sum_expense
+            // 
+            this.lbl_sum_expense.AutoSize = true;
+            this.lbl_sum_expense.Location = new System.Drawing.Point(573, 525);
+            this.lbl_sum_expense.Name = "lbl_sum_expense";
+            this.lbl_sum_expense.Size = new System.Drawing.Size(69, 13);
+            this.lbl_sum_expense.TabIndex = 36;
+            this.lbl_sum_expense.Text = "Total Income";
+            // 
+            // lbl_sum_income
+            // 
+            this.lbl_sum_income.AutoSize = true;
+            this.lbl_sum_income.Location = new System.Drawing.Point(264, 525);
+            this.lbl_sum_income.Name = "lbl_sum_income";
+            this.lbl_sum_income.Size = new System.Drawing.Size(69, 13);
+            this.lbl_sum_income.TabIndex = 35;
+            this.lbl_sum_income.Text = "Total Income";
+            // 
+            // chart2
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
+            this.chart2.Location = new System.Drawing.Point(673, 113);
+            this.chart2.Name = "chart2";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
+            this.chart2.Size = new System.Drawing.Size(513, 346);
+            this.chart2.TabIndex = 34;
+            this.chart2.Text = "chart2";
+            // 
+            // txt_sum2
+            // 
+            this.txt_sum2.AutoSize = true;
+            this.txt_sum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_sum2.Location = new System.Drawing.Point(1106, 509);
+            this.txt_sum2.Name = "txt_sum2";
+            this.txt_sum2.Size = new System.Drawing.Size(58, 29);
+            this.txt_sum2.TabIndex = 33;
+            this.txt_sum2.Text = "sum";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(929, 509);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(171, 29);
+            this.label41.TabIndex = 32;
+            this.label41.Text = "Total balance :";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(339, 525);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(75, 13);
+            this.label38.TabIndex = 12;
+            this.label38.Text = "Total Expense";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(30, 525);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(69, 13);
+            this.label37.TabIndex = 11;
+            this.label37.Text = "Total Income";
+            // 
+            // grid_expense
+            // 
+            this.grid_expense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_expense.Location = new System.Drawing.Point(342, 113);
+            this.grid_expense.Name = "grid_expense";
+            this.grid_expense.Size = new System.Drawing.Size(300, 397);
+            this.grid_expense.TabIndex = 10;
+            // 
+            // grid_income
+            // 
+            this.grid_income.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_income.Location = new System.Drawing.Point(33, 113);
+            this.grid_income.Name = "grid_income";
+            this.grid_income.Size = new System.Drawing.Size(300, 397);
+            this.grid_income.TabIndex = 9;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(443, 87);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(86, 24);
+            this.label36.TabIndex = 8;
+            this.label36.Text = "Expense";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(131, 87);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(73, 24);
+            this.label35.TabIndex = 7;
+            this.label35.Text = "Income";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(484, 36);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(29, 13);
+            this.label34.TabIndex = 6;
+            this.label34.Text = "Year";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(263, 36);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(37, 13);
+            this.label33.TabIndex = 5;
+            this.label33.Text = "Month";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(18, 33);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(47, 13);
+            this.label32.TabIndex = 4;
+            this.label32.Text = "Account";
+            // 
+            // btn_go
+            // 
+            this.btn_go.Location = new System.Drawing.Point(732, 31);
+            this.btn_go.Name = "btn_go";
+            this.btn_go.Size = new System.Drawing.Size(75, 23);
+            this.btn_go.TabIndex = 3;
+            this.btn_go.Text = "GO";
+            this.btn_go.UseVisualStyleBackColor = true;
+            // 
+            // cmb_year
+            // 
+            this.cmb_year.FormattingEnabled = true;
+            this.cmb_year.Location = new System.Drawing.Point(554, 33);
+            this.cmb_year.Name = "cmb_year";
+            this.cmb_year.Size = new System.Drawing.Size(121, 21);
+            this.cmb_year.TabIndex = 2;
+            // 
+            // cmb_month
+            // 
+            this.cmb_month.FormattingEnabled = true;
+            this.cmb_month.Location = new System.Drawing.Point(342, 33);
+            this.cmb_month.Name = "cmb_month";
+            this.cmb_month.Size = new System.Drawing.Size(121, 21);
+            this.cmb_month.TabIndex = 1;
+            // 
+            // cmb_account
+            // 
+            this.cmb_account.FormattingEnabled = true;
+            this.cmb_account.Location = new System.Drawing.Point(106, 33);
+            this.cmb_account.Name = "cmb_account";
+            this.cmb_account.Size = new System.Drawing.Size(137, 21);
+            this.cmb_account.TabIndex = 0;
+            // 
+            // tab_new
+            // 
+            this.tab_new.Controls.Add(this.label47);
+            this.tab_new.Controls.Add(this.btn_add_addData);
+            this.tab_new.Controls.Add(this.rt_log);
+            this.tab_new.Controls.Add(this.cmb_add_type);
+            this.tab_new.Controls.Add(this.cmb_add_account);
+            this.tab_new.Controls.Add(this.dt_add_date);
+            this.tab_new.Controls.Add(this.txt_add_details);
+            this.tab_new.Controls.Add(this.txt_add_amt);
+            this.tab_new.Controls.Add(this.label46);
+            this.tab_new.Controls.Add(this.label45);
+            this.tab_new.Controls.Add(this.label44);
+            this.tab_new.Controls.Add(this.label43);
+            this.tab_new.Controls.Add(this.label42);
+            this.tab_new.Location = new System.Drawing.Point(4, 22);
+            this.tab_new.Margin = new System.Windows.Forms.Padding(0);
+            this.tab_new.Name = "tab_new";
+            this.tab_new.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_new.Size = new System.Drawing.Size(1208, 619);
+            this.tab_new.TabIndex = 2;
+            this.tab_new.Text = "new";
+            this.tab_new.UseVisualStyleBackColor = true;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(791, 38);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(30, 13);
+            this.label47.TabIndex = 21;
+            this.label47.Text = "Logs";
+            // 
+            // btn_add_addData
+            // 
+            this.btn_add_addData.Location = new System.Drawing.Point(282, 493);
+            this.btn_add_addData.Name = "btn_add_addData";
+            this.btn_add_addData.Size = new System.Drawing.Size(191, 40);
+            this.btn_add_addData.TabIndex = 20;
+            this.btn_add_addData.Text = "Add";
+            this.btn_add_addData.UseVisualStyleBackColor = true;
+            this.btn_add_addData.Click += new System.EventHandler(this.btn_add_addData_Click);
+            // 
+            // rt_log
+            // 
+            this.rt_log.Location = new System.Drawing.Point(791, 57);
+            this.rt_log.Name = "rt_log";
+            this.rt_log.Size = new System.Drawing.Size(398, 541);
+            this.rt_log.TabIndex = 19;
+            this.rt_log.Text = "";
+            // 
+            // cmb_add_type
+            // 
+            this.cmb_add_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_add_type.FormattingEnabled = true;
+            this.cmb_add_type.Location = new System.Drawing.Point(305, 103);
+            this.cmb_add_type.Name = "cmb_add_type";
+            this.cmb_add_type.Size = new System.Drawing.Size(256, 33);
+            this.cmb_add_type.TabIndex = 18;
+            // 
+            // cmb_add_account
+            // 
+            this.cmb_add_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_add_account.FormattingEnabled = true;
+            this.cmb_add_account.Location = new System.Drawing.Point(305, 57);
+            this.cmb_add_account.Name = "cmb_add_account";
+            this.cmb_add_account.Size = new System.Drawing.Size(256, 33);
+            this.cmb_add_account.TabIndex = 17;
+            // 
+            // dt_add_date
+            // 
+            this.dt_add_date.CustomFormat = "dd-MMMM-yyyy";
+            this.dt_add_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_add_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dt_add_date.Location = new System.Drawing.Point(305, 202);
+            this.dt_add_date.Name = "dt_add_date";
+            this.dt_add_date.Size = new System.Drawing.Size(226, 30);
+            this.dt_add_date.TabIndex = 16;
+            // 
+            // txt_add_details
+            // 
+            this.txt_add_details.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_add_details.Location = new System.Drawing.Point(305, 244);
+            this.txt_add_details.Multiline = true;
+            this.txt_add_details.Name = "txt_add_details";
+            this.txt_add_details.Size = new System.Drawing.Size(256, 181);
+            this.txt_add_details.TabIndex = 14;
+            // 
+            // txt_add_amt
+            // 
+            this.txt_add_amt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_add_amt.Location = new System.Drawing.Point(305, 150);
+            this.txt_add_amt.Name = "txt_add_amt";
+            this.txt_add_amt.Size = new System.Drawing.Size(114, 30);
+            this.txt_add_amt.TabIndex = 12;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(164, 247);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(71, 25);
+            this.label46.TabIndex = 8;
+            this.label46.Text = "Details";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(164, 198);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(53, 25);
+            this.label45.TabIndex = 7;
+            this.label45.Text = "Date";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(164, 152);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(80, 25);
+            this.label44.TabIndex = 2;
+            this.label44.Text = "Amount";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(164, 106);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(57, 25);
+            this.label43.TabIndex = 1;
+            this.label43.Text = "Type";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(164, 60);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(84, 25);
+            this.label42.TabIndex = 0;
+            this.label42.Text = "Account";
+            // 
             // btn_dashboard
             // 
             this.btn_dashboard.Location = new System.Drawing.Point(9, 66);
@@ -561,340 +892,11 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // chart1
-            // 
-            chartArea17.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea17);
-            legend17.Name = "Legend1";
-            this.chart1.Legends.Add(legend17);
-            this.chart1.Location = new System.Drawing.Point(586, 60);
-            this.chart1.Name = "chart1";
-            series17.ChartArea = "ChartArea1";
-            series17.Legend = "Legend1";
-            series17.Name = "Series1";
-            this.chart1.Series.Add(series17);
-            this.chart1.Size = new System.Drawing.Size(529, 353);
-            this.chart1.TabIndex = 32;
-            this.chart1.Text = "chart1";
-            // 
-            // cmb_account
-            // 
-            this.cmb_account.FormattingEnabled = true;
-            this.cmb_account.Location = new System.Drawing.Point(106, 33);
-            this.cmb_account.Name = "cmb_account";
-            this.cmb_account.Size = new System.Drawing.Size(137, 21);
-            this.cmb_account.TabIndex = 0;
-            // 
-            // cmb_month
-            // 
-            this.cmb_month.FormattingEnabled = true;
-            this.cmb_month.Location = new System.Drawing.Point(342, 33);
-            this.cmb_month.Name = "cmb_month";
-            this.cmb_month.Size = new System.Drawing.Size(121, 21);
-            this.cmb_month.TabIndex = 1;
-            // 
-            // cmb_year
-            // 
-            this.cmb_year.FormattingEnabled = true;
-            this.cmb_year.Location = new System.Drawing.Point(554, 33);
-            this.cmb_year.Name = "cmb_year";
-            this.cmb_year.Size = new System.Drawing.Size(121, 21);
-            this.cmb_year.TabIndex = 2;
-            // 
-            // btn_go
-            // 
-            this.btn_go.Location = new System.Drawing.Point(732, 31);
-            this.btn_go.Name = "btn_go";
-            this.btn_go.Size = new System.Drawing.Size(75, 23);
-            this.btn_go.TabIndex = 3;
-            this.btn_go.Text = "GO";
-            this.btn_go.UseVisualStyleBackColor = true;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(18, 33);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(47, 13);
-            this.label32.TabIndex = 4;
-            this.label32.Text = "Account";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(263, 36);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(37, 13);
-            this.label33.TabIndex = 5;
-            this.label33.Text = "Month";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(484, 36);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(29, 13);
-            this.label34.TabIndex = 6;
-            this.label34.Text = "Year";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(131, 87);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(73, 24);
-            this.label35.TabIndex = 7;
-            this.label35.Text = "Income";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(443, 87);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(86, 24);
-            this.label36.TabIndex = 8;
-            this.label36.Text = "Expense";
-            // 
-            // grid_income
-            // 
-            this.grid_income.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_income.Location = new System.Drawing.Point(33, 113);
-            this.grid_income.Name = "grid_income";
-            this.grid_income.Size = new System.Drawing.Size(300, 397);
-            this.grid_income.TabIndex = 9;
-            // 
-            // grid_expense
-            // 
-            this.grid_expense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_expense.Location = new System.Drawing.Point(342, 113);
-            this.grid_expense.Name = "grid_expense";
-            this.grid_expense.Size = new System.Drawing.Size(300, 397);
-            this.grid_expense.TabIndex = 10;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(30, 525);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(69, 13);
-            this.label37.TabIndex = 11;
-            this.label37.Text = "Total Income";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(339, 525);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(75, 13);
-            this.label38.TabIndex = 12;
-            this.label38.Text = "Total Expense";
-            // 
-            // txt_sum2
-            // 
-            this.txt_sum2.AutoSize = true;
-            this.txt_sum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_sum2.Location = new System.Drawing.Point(1106, 509);
-            this.txt_sum2.Name = "txt_sum2";
-            this.txt_sum2.Size = new System.Drawing.Size(58, 29);
-            this.txt_sum2.TabIndex = 33;
-            this.txt_sum2.Text = "sum";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(929, 509);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(171, 29);
-            this.label41.TabIndex = 32;
-            this.label41.Text = "Total balance :";
-            // 
-            // chart2
-            // 
-            chartArea18.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea18);
-            legend18.Name = "Legend1";
-            this.chart2.Legends.Add(legend18);
-            this.chart2.Location = new System.Drawing.Point(673, 113);
-            this.chart2.Name = "chart2";
-            series18.ChartArea = "ChartArea1";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series18.Legend = "Legend1";
-            series18.Name = "Series1";
-            this.chart2.Series.Add(series18);
-            this.chart2.Size = new System.Drawing.Size(513, 346);
-            this.chart2.TabIndex = 34;
-            this.chart2.Text = "chart2";
-            // 
-            // lbl_sum_income
-            // 
-            this.lbl_sum_income.AutoSize = true;
-            this.lbl_sum_income.Location = new System.Drawing.Point(264, 525);
-            this.lbl_sum_income.Name = "lbl_sum_income";
-            this.lbl_sum_income.Size = new System.Drawing.Size(69, 13);
-            this.lbl_sum_income.TabIndex = 35;
-            this.lbl_sum_income.Text = "Total Income";
-            // 
-            // lbl_sum_expense
-            // 
-            this.lbl_sum_expense.AutoSize = true;
-            this.lbl_sum_expense.Location = new System.Drawing.Point(573, 525);
-            this.lbl_sum_expense.Name = "lbl_sum_expense";
-            this.lbl_sum_expense.Size = new System.Drawing.Size(69, 13);
-            this.lbl_sum_expense.TabIndex = 36;
-            this.lbl_sum_expense.Text = "Total Income";
-            // 
-            // tab_new
-            // 
-            this.tab_new.Controls.Add(this.label47);
-            this.tab_new.Controls.Add(this.btn_add_addData);
-            this.tab_new.Controls.Add(this.rt_log);
-            this.tab_new.Controls.Add(this.cmb_add_type);
-            this.tab_new.Controls.Add(this.cmb_add_account);
-            this.tab_new.Controls.Add(this.dt_add_date);
-            this.tab_new.Controls.Add(this.txt_add_details);
-            this.tab_new.Controls.Add(this.txt_add_amt);
-            this.tab_new.Controls.Add(this.label46);
-            this.tab_new.Controls.Add(this.label45);
-            this.tab_new.Controls.Add(this.label44);
-            this.tab_new.Controls.Add(this.label43);
-            this.tab_new.Controls.Add(this.label42);
-            this.tab_new.Location = new System.Drawing.Point(4, 22);
-            this.tab_new.Margin = new System.Windows.Forms.Padding(0);
-            this.tab_new.Name = "tab_new";
-            this.tab_new.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_new.Size = new System.Drawing.Size(1208, 619);
-            this.tab_new.TabIndex = 2;
-            this.tab_new.Text = "new";
-            this.tab_new.UseVisualStyleBackColor = true;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(164, 60);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(84, 25);
-            this.label42.TabIndex = 0;
-            this.label42.Text = "Account";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(164, 106);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(57, 25);
-            this.label43.TabIndex = 1;
-            this.label43.Text = "Type";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(164, 152);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(80, 25);
-            this.label44.TabIndex = 2;
-            this.label44.Text = "Amount";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(164, 198);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(53, 25);
-            this.label45.TabIndex = 7;
-            this.label45.Text = "Date";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(164, 247);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(71, 25);
-            this.label46.TabIndex = 8;
-            this.label46.Text = "Details";
-            // 
-            // txt_add_amt
-            // 
-            this.txt_add_amt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_add_amt.Location = new System.Drawing.Point(305, 150);
-            this.txt_add_amt.Name = "txt_add_amt";
-            this.txt_add_amt.Size = new System.Drawing.Size(114, 30);
-            this.txt_add_amt.TabIndex = 12;
-            // 
-            // txt_add_details
-            // 
-            this.txt_add_details.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_add_details.Location = new System.Drawing.Point(305, 244);
-            this.txt_add_details.Multiline = true;
-            this.txt_add_details.Name = "txt_add_details";
-            this.txt_add_details.Size = new System.Drawing.Size(256, 181);
-            this.txt_add_details.TabIndex = 14;
-            // 
-            // dt_add_date
-            // 
-            this.dt_add_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_add_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_add_date.Location = new System.Drawing.Point(305, 202);
-            this.dt_add_date.Name = "dt_add_date";
-            this.dt_add_date.Size = new System.Drawing.Size(168, 30);
-            this.dt_add_date.TabIndex = 16;
-            // 
-            // cmb_add_account
-            // 
-            this.cmb_add_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_add_account.FormattingEnabled = true;
-            this.cmb_add_account.Location = new System.Drawing.Point(305, 57);
-            this.cmb_add_account.Name = "cmb_add_account";
-            this.cmb_add_account.Size = new System.Drawing.Size(256, 33);
-            this.cmb_add_account.TabIndex = 17;
-            // 
-            // cmb_add_type
-            // 
-            this.cmb_add_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_add_type.FormattingEnabled = true;
-            this.cmb_add_type.Location = new System.Drawing.Point(305, 103);
-            this.cmb_add_type.Name = "cmb_add_type";
-            this.cmb_add_type.Size = new System.Drawing.Size(256, 33);
-            this.cmb_add_type.TabIndex = 18;
-            // 
-            // rt_log
-            // 
-            this.rt_log.Location = new System.Drawing.Point(791, 57);
-            this.rt_log.Name = "rt_log";
-            this.rt_log.Size = new System.Drawing.Size(398, 541);
-            this.rt_log.TabIndex = 19;
-            this.rt_log.Text = "";
-            // 
-            // btn_add_addData
-            // 
-            this.btn_add_addData.Location = new System.Drawing.Point(282, 493);
-            this.btn_add_addData.Name = "btn_add_addData";
-            this.btn_add_addData.Size = new System.Drawing.Size(191, 40);
-            this.btn_add_addData.TabIndex = 20;
-            this.btn_add_addData.Text = "Add";
-            this.btn_add_addData.UseVisualStyleBackColor = true;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(791, 38);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(30, 13);
-            this.label47.TabIndex = 21;
-            this.label47.Text = "Logs";
-            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(210, -50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1212, 116);
+            this.panel1.Size = new System.Drawing.Size(1212, 88);
             this.panel1.TabIndex = 7;
             // 
             // frm_main
@@ -913,12 +915,12 @@
             this.tab_main.ResumeLayout(false);
             this.tab_dash.ResumeLayout(false);
             this.tab_dash.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.tab_details.ResumeLayout(false);
             this.tab_details.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_income)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_expense)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_expense)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_income)).EndInit();
             this.tab_new.ResumeLayout(false);
             this.tab_new.PerformLayout();
             this.ResumeLayout(false);
