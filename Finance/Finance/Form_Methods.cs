@@ -15,6 +15,9 @@ namespace Finance
     class Form_Methods
     {
         static DBConnection conn;
+        static int sum;
+       
+       
 
         public static void GetAccountDetailsFromDB()
         {
@@ -22,7 +25,7 @@ namespace Finance
 
         }
 
-        public static void GetDataFiltered()
+        public static void GetDataFiltered(DataGridView dw, string account, string type, string month, string year)
         {
 
         }
@@ -64,9 +67,28 @@ namespace Finance
             conn.Close();
         }
 
-        public static void CalculateBalance()
+        public static int getSum(string account, string type)
         {
+            string query = "Select * from details WHERE account_name=@account AND type=@type ;";
+            conn = new DBConnection();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn.getConnection());
+            cmd.Parameters.AddWithValue("@account",account);
+            cmd.Parameters.AddWithValue("@type", type);
+            MySqlDataReader red = cmd.ExecuteReader();
+            while (red.Read())
+            {                
+                    sum += red.GetInt32("amount");                   
+                
+            }
+            return sum;
 
+        }
+
+        
+        public static int CalculateBalance(int income, int expense)
+        {
+            return income - expense;
         }
 
         public static void CreatePDFLog()
