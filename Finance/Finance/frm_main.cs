@@ -12,9 +12,35 @@ namespace Finance
 {
     public partial class frm_main : Form
     {
+        int income;
+        int expense;
+        int balance;
+        int totalBalance;
+        //DBConnection conn;
+
         public frm_main()
         {
             InitializeComponent();
+
+            //dashboard tab
+            income = Form_Methods.getSum("Assets", "income");
+            expense = Form_Methods.getSum("Assets", "expense");
+            balance = income - expense;
+            label27.Text = balance.ToString();
+            income = Form_Methods.getSum("Bank", "income");
+            expense = Form_Methods.getSum("Bank", "expense");
+            balance = income - expense;
+            label26.Text = balance.ToString();
+            totalBalance = Int32.Parse(label27.Text)+ Int32.Parse(label26.Text);
+            lbl_sum_main.Text = totalBalance.ToString();
+
+
+            //details tab
+            Form_Methods.getMonth(cmb_month);
+            Form_Methods.GetAccounts(cmb_account);
+            Form_Methods.getYear(cmb_year);
+
+
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -35,6 +61,8 @@ namespace Finance
         private void btn_details_Click(object sender, EventArgs e)
         {
             tab_main.SelectedTab = tab_details;
+            
+
         }
 
         private void btn_add_addData_Click(object sender, EventArgs e)
@@ -57,6 +85,18 @@ namespace Finance
                 Form_Methods.close_connection();
             }
          
+        }
+
+        private void btn_go_Click(object sender, EventArgs e)
+        {
+            Form_Methods.GetDataFilteredIncome(grid_income, cmb_account.Text, cmb_month.Text, cmb_year.Text);
+            Form_Methods.GetDataFilteredExpense(grid_expense, cmb_account.Text, cmb_month.Text, cmb_year.Text);
+            int expense = Form_Methods.GetDataFilteredExpenseSum(cmb_account.Text, cmb_month.Text, cmb_year.Text);
+            int income = Form_Methods.GetDataFilteredIncomeSum(cmb_account.Text, cmb_month.Text, cmb_year.Text);
+            int balance = income - expense;
+            lbl_sum_income.Text = income.ToString();
+            lbl_sum_expense.Text = expense.ToString();
+            txt_sum2.Text = balance.ToString();
         }
     }
 }

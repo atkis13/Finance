@@ -9,13 +9,14 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 using System.IO;
+using System.Data;
 
 namespace Finance
 {
     class Form_Methods
     {
         static DBConnection conn;
-        static int sum;
+        
        
        
 
@@ -25,8 +26,115 @@ namespace Finance
 
         }
 
-        public static void GetDataFiltered(DataGridView dw, string account, string type, string month, string year)
+        public static void GetDataFilteredIncome(DataGridView dw, string account, string month, string year)
         {
+            string query = "Select * from  details where type = @income AND account_name = @account And month = @month AND year = @year;";
+            conn = new DBConnection();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn.getConnection());
+            cmd.Parameters.AddWithValue("@account", account);
+            cmd.Parameters.AddWithValue("@month", month);
+            cmd.Parameters.AddWithValue("@year", year);
+            cmd.Parameters.AddWithValue("@income", "income");
+            MySqlDataAdapter adap = new MySqlDataAdapter();
+            adap.SelectCommand = cmd;
+            DataTable db = new DataTable();
+            adap.Fill(db);
+            BindingSource bsourc = new BindingSource();
+            bsourc.DataSource = db;
+            dw.DataSource = bsourc;
+            adap.Update(db);
+
+        }
+        public static int GetDataFilteredIncomeSum(string account, string month, string year)
+        {
+            int sum = 0;
+            string query = "Select * from  details where type = @income AND account_name = @account And month = @month AND year = @year;";
+            conn = new DBConnection();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn.getConnection());
+            cmd.Parameters.AddWithValue("@account", account);
+            cmd.Parameters.AddWithValue("@month", month);
+            cmd.Parameters.AddWithValue("@year", year);
+            cmd.Parameters.AddWithValue("@income", "income");
+            MySqlDataReader red = cmd.ExecuteReader();
+            while (red.Read())
+            {
+                sum += red.GetInt32("amount");
+
+            }
+            return sum;
+
+
+        }
+
+        public static void GetDataFilteredExpense(DataGridView dw, string account, string month, string year)
+        {
+            string query = "Select * from  details where type = @expense AND account_name = @account And month = @month AND year = @year;";
+            conn = new DBConnection();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn.getConnection());
+            cmd.Parameters.AddWithValue("@account", account);
+            cmd.Parameters.AddWithValue("@month", month);
+            cmd.Parameters.AddWithValue("@year", year);
+            cmd.Parameters.AddWithValue("@expense", "expense");
+            MySqlDataAdapter adap = new MySqlDataAdapter();
+            adap.SelectCommand = cmd;
+            DataTable db = new DataTable();
+            adap.Fill(db);
+            BindingSource bsourc = new BindingSource();
+            bsourc.DataSource = db;
+            dw.DataSource = bsourc;
+            adap.Update(db);
+        }
+        public static int GetDataFilteredExpenseSum(string account, string month, string year)
+        {
+            int sum = 0;
+            string query = "Select * from  details where type = @expense AND account_name = @account And month = @month AND year = @year;";
+            conn = new DBConnection();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn.getConnection());
+            cmd.Parameters.AddWithValue("@account", account);
+            cmd.Parameters.AddWithValue("@month", month);
+            cmd.Parameters.AddWithValue("@year", year);
+            cmd.Parameters.AddWithValue("@expense", "expense");
+            MySqlDataReader red = cmd.ExecuteReader();
+            while (red.Read())
+            {
+                sum += red.GetInt32("amount");
+
+            }
+            return sum;
+        }
+
+            public static void getMonth(ComboBox cb)
+        {
+            string query = "Select distinct month from details;";
+            conn = new DBConnection();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn.getConnection());
+            
+            MySqlDataReader red = cmd.ExecuteReader();
+            while (red.Read())
+            {
+                string acc_ = red.GetString("month");
+                cb.Items.Add(acc_);
+            }
+
+        }
+
+        public static void getYear(ComboBox cb)
+        {
+            string query = "Select distinct year from details;";
+            conn = new DBConnection();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn.getConnection());
+            MySqlDataReader red = cmd.ExecuteReader();
+            while (red.Read())
+            {
+                string acc_ = red.GetString("year");
+                cb.Items.Add(acc_);
+            }
 
         }
 
@@ -57,7 +165,7 @@ namespace Finance
             while (red.Read())
             {
                 string acc_ = red.GetString("account_name");
-                cb.Items.Add(cb);
+                cb.Items.Add(acc_);
             }
 
         }
@@ -69,7 +177,8 @@ namespace Finance
 
         public static int getSum(string account, string type)
         {
-            string query = "Select * from details WHERE account_name=@account AND type=@type ;";
+            int sum = 0;
+            string query = "Select * from details WHERE account_name=@account AND type=@type;";
             conn = new DBConnection();
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(query, conn.getConnection());
