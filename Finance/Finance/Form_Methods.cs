@@ -207,7 +207,16 @@ namespace Finance
             doc.Open();
             DateTime d = DateTime.Now;
             Paragraph p0 = new Paragraph(d.ToString() + ": Log Created");
+            Paragraph p12 = new Paragraph(" ");
+            Paragraph p13 = new Paragraph("=================================================");
+            Paragraph p14 = new Paragraph(" ");
+            Paragraph p15 = new Paragraph(" ");
             doc.Add(p0);
+            doc.Add(p12);
+            doc.Add(p13);
+            doc.Add(p14);
+            doc.Add(p15);
+            doc.Close();
 
         }
 
